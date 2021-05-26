@@ -1,0 +1,78 @@
+Videos upload:
+			Case 1 'AVI video upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile1.avi' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My videos' tab from left sidebar menu
+	-previously loaded videos thumbnails should be shown
+	-testfile1.avi' thumbnail  should be listed in top left corner of videos list 
+
+			Case 2 'MOV video upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile2.mov' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My videos' tab from left sidebar menu
+	-previously loaded videos thumbnails should be shown
+	-testfile2.mov' thumbnail  should be listed in top left corner of videos list 
+
+			Case 3 'MKV video upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile3.mkv' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My videos' tab from left sidebar menu
+	-previously loaded videos thumbnails should be shown
+	-testfile3.mkv' thumbnail  should be listed in top left corner of videos list 
+
+
+			Case 4 'WEBM image upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile4.webm' to 'upload media pop-up
+	-'upload media' pop-up should not dissapear
+	-'ERROR: only avi,mkv and mov video types are allowed' notification should be displayed
+Click on 'My videos' tab from left sidebar menu
+	-previously loaded videos thumbnails should be shown
+	-testfile4.webm' thumbnail should not be listed in top left corner of videos list
+
+
+			Case 5 'boundary large video upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile5.avi' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My videos' tab from left sidebar menu
+	-previously loaded videos thumbnails should be shown
+	-testfile5.avi' thumbnail  should be listed in top left corner of videos list 
+
+
+			Case 6 'very large video upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile6.avi' to 'upload media pop-up
+	-'upload media' pop-up should not disappear
+	-'ERROR: videos size should not be more than 50mb' notification should be displayed
