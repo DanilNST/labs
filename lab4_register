@@ -1,0 +1,71 @@
+Right data for register  is {'RealName', 'RealPassword', 'realE@mail.com}
+
+Register form:
+			Case 1 'Register with right data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have 'Register Now' button
+	-'Register' pop-up should appear
+	-'Register' pop-up should have three fields: 'name',  'password' and 'email'
+Type 'RealName' in name field
+Type 'RealPassword' in password field
+Type 'realE@mail.com' in email field
+click 'Register' button
+	-'Register' pop-up should disappear
+	-'Registered succes' notification should be shown 
+	-application main page should be shown
+	-all tabs containing media files uploaded by the user must be empty
+
+			Case 2 'Register with previously registered data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have 'Register Now' button
+	-'Register' pop-up should appear
+	-'Register' pop-up should have three fields: 'name',  'password' and 'email'
+Type 'RealName' in name field
+Type 'RealPassword' in password field
+Type 'realE@mail.com' in email field
+click 'Register' button
+	-'Register' pop-up should not  disappear
+	-'This email already registered' notification should be shown 
+
+			Case 3 'Register with wrong email data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have 'Register Now' button
+	-'Register' pop-up should appear
+	-'Register' pop-up should have three fields: 'name',  'password' and 'email'
+Type 'RealName' in name field
+Type 'RealPassword' in password field
+Type '1' in email field
+click 'Register' button
+	-'Register' pop-up should not  disappear
+	-'This email already registered' notification should be shown 
+	-'Email should be correct' notification should be shown
+
+			Case 4 'Register with wrong already registered password and incorrect email'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have 'Register Now' button
+	-'Register' pop-up should appear
+	-'Register' pop-up should have three fields: 'name',  'password' and 'email'
+Type '111' in name field
+Type 'RealPassword' in password field
+Type 'realE@mail.com' in email field
+click 'Register' button
+	-'Register' pop-up should not  disappear
+	-'This email already registered' notification should be shown 
+	-'name should be correct' notification should be shown
+	-'This email already registered' notification should be shown 
+
+			Case 5 'Register without data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have 'Register Now' button
+	-'Register' pop-up should appear
+	-'Register' pop-up should have three fields: 'name',  'password' and 'email'
+click 'Register' button
+	-Register' pop-up should not dissappear
+	-'Name field should not be empty' notification should be shown
+	-'Password field should not be empty' notification should be shown
+	-'Email field should not be empty' notification should be shown
