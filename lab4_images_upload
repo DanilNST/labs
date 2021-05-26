@@ -1,0 +1,69 @@
+Images upload:
+
+
+			Case 1 'JPG image upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile1.jpg' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My images' tab from left sidebar menu
+	-previously loaded images thumbnail should be shown
+	-testfile1.png' thumbnail  should be listed in top left corner of images list 
+
+			Case 2 'PNG image upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile2.png' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My images' tab from left sidebar menu
+	-previously loaded images thumbnail should be shown
+	-testfile1.png' thumbnail  should be listed in top left corner of images list 
+
+
+			Case 3 'BMP image upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile2.bmp' to 'upload media pop-up
+	-'upload media' pop-up should not dissapear
+	-'ERROR: only jpg and png image types are allowed' notification should be displayed
+Click on 'My images' tab from left sidebar menu
+	-previously loaded images thumbnail should be shown
+	-testfile2.bmp' thumbnail  should not be listed in top left corner of images list
+
+			Case 4 'boundary large png image upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile4.png' to 'upload media pop-up
+	-'upload media' pop-up should disappear
+	-'successful media upload' notification should be displayed
+Click on 'My images' tab from left sidebar menu
+	-previously loaded images thumbnail should be shown
+	-testfile4.png' thumbnail  should be listed in top left corner of images list 
+
+			Case 5 'very large png image upload'
+Open application main page
+Perform login
+	-'upload media' button should be present
+Click on 'upload media' button
+	-'upload media' pop-up should appear
+Copy 'testfile5.png' to 'upload media pop-up
+	-'upload media' pop-up should not dissapear
+	-'ERROR: image size should not be more than 2 mb' notification should be displayed
+Click on 'My images' tab from left sidebar menu
+	-previously loaded images thumbnail should be shown
+	-testfile5.png' thumbnail  should not be listed in top left corner of images list
+ 
