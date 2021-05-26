@@ -1,0 +1,34 @@
+Right data for login is {'RealName', 'RealPassword'}
+
+Login form:
+			Case 1 'Login with right data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have two fields: 'name' and 'password'
+type 'RealName' in 'name' field
+type 'RealPassword' in password field'
+click 'Login' button
+	-'Please Log In' pop-up should dissappear
+	-'Logged in successfully' notification should be shown 
+	-application main page should be shown
+	-all data displayed in application main page should be correct
+
+			Case 2 'Login with wrong data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have two fields: 'name' and 'password'
+type 'NotRealName' in 'name' field
+type 'NotRealPassword' in password field'
+click 'Login' button
+	-'Please Log In' pop-up should not dissappear
+	-'Wrong name or password' notification should be shown
+
+			Case 3 'Login without data'
+Open application
+	-'Please Log In' pop-up should appear
+	-'Please Log In' pop-up should have two fields: 'name' and 'password'
+click 'Login' button
+	-'Please Log In' pop-up should not dissappear
+	-'Name field should not be empty' notification should be shown
+	-'Password field should not be empty' notification should be shown
+
